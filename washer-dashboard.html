@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Washer Dashboard – Laundry Bubbles</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="lb-body">
+  <div class="lb-shell">
+
+    <header class="lb-page-header">
+      <h1 class="lb-page-title">Washer Dashboard</h1>
+      <a href="/settings.html" class="lb-chip">Settings</a>
+    </header>
+
+    <main class="lb-main" style="flex-direction:column; gap:20px;">
+
+      <section class="lb-card">
+        <h2 class="lb-card-title">Open Jobs</h2>
+        <div id="lb-open-jobs" class="lb-list"></div>
+      </section>
+
+      <section class="lb-card">
+        <h2 class="lb-card-title">Your Jobs</h2>
+        <div id="lb-my-jobs" class="lb-list"></div>
+      </section>
+
+    </main>
+
+  </div>
+
+  <script type="module" src="/js/washer.js"></script>
+</body>
+</html>
