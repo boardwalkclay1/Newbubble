@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Laundry Bubbles</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050816">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="lb-body">
+  <div class="lb-shell">
+    <header class="lb-header">
+      <h1 class="lb-title">Laundry Bubbles</h1>
+      <p class="lb-subtitle">70s laundromat. On‑demand. $1/day.</p>
+    </header>
+
+    <main class="lb-main">
+      <section class="lb-card">
+        <h2 class="lb-card-title">Sign in</h2>
+
+        <label class="lb-label">
+          Email
+          <input id="lb-email-input" type="email" class="lb-input" placeholder="you@example.com" autocomplete="email">
+        </label>
+
+        <div class="lb-role-row">
+          <button class="lb-role-btn" data-role="client">I need laundry done</button>
+          <button class="lb-role-btn" data-role="washer">I wash for money</button>
+        </div>
+
+        <button id="lb-continue-btn" class="lb-primary-btn">Continue</button>
+
+        <p id="lb-error" class="lb-error"></p>
+      </section>
+    </main>
+
+    <footer class="lb-footer">
+      <p>Powered by bubbles, bleach, and Vercel.</p>
+    </footer>
+  </div>
+
+  <script type="module" src="/js/index.js"></script>
+</body>
+</html>
