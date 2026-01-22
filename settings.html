@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Settings – Laundry Bubbles</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="lb-body">
+  <div class="lb-shell">
+
+    <header class="lb-page-header">
+      <h1 class="lb-page-title">Settings</h1>
+      <a href="/index.html" class="lb-chip">Logout</a>
+    </header>
+
+    <main class="lb-main" style="flex-direction:column; gap:20px;">
+
+      <section class="lb-card">
+        <h2 class="lb-card-title">Profile</h2>
+
+        <label class="lb-label">
+          Name
+          <input id="lb-name" class="lb-input">
+        </label>
+
+        <label class="lb-label">
+          Phone
+          <input id="lb-phone" class="lb-input">
+        </label>
+
+        <label class="lb-label">
+          Services (comma separated)
+          <input id="lb-services" class="lb-input" placeholder="laundry, folding, sewing">
+        </label>
+
+        <label class="lb-label">
+          Prices (JSON)
+          <input id="lb-prices" class="lb-input" placeholder='{"laundry":15,"sewing":8}'>
+        </label>
+
+        <label class="lb-label">
+          Profile Photo
+          <input id="lb-photo" type="file" accept="image/*" class="lb-input">
+        </label>
+
+        <button id="lb-save-profile" class="lb-primary-btn">Save Profile</button>
+        <p id="lb-settings-error" class="lb-error"></p>
+      </section>
+
+    </main>
+
+  </div>
+
+  <script type="module" src="/js/settings.js"></script>
+</body>
+</html>
