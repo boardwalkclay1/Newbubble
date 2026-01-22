@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Client Dashboard – Laundry Bubbles</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="lb-body">
+  <div class="lb-shell">
+
+    <header class="lb-page-header">
+      <h1 class="lb-page-title">Client Dashboard</h1>
+      <a href="/settings.html" class="lb-chip">Settings</a>
+    </header>
+
+    <main class="lb-main" style="flex-direction:column; gap:20px;">
+
+      <section class="lb-card">
+        <h2 class="lb-card-title">Post a Load</h2>
+
+        <label class="lb-label">
+          Description
+          <input id="lb-job-desc" class="lb-input" placeholder="2 bags, detergent included">
+        </label>
+
+        <label class="lb-label">
+          Pickup Address
+          <input id="lb-job-address" class="lb-input" placeholder="123 Main St">
+        </label>
+
+        <button id="lb-create-job" class="lb-primary-btn">Create Job</button>
+        <p id="lb-job-error" class="lb-error"></p>
+      </section>
+
+      <section class="lb-card">
+        <h2 class="lb-card-title">Your Jobs</h2>
+        <div id="lb-job-list" class="lb-list"></div>
+      </section>
+
+    </main>
+
+  </div>
+
+  <script type="module" src="/js/client.js"></script>
+</body>
+</html>
