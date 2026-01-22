@@ -1,4 +1,4 @@
-import { OWNER_EMAIL, STORAGE_KEYS, ROLES, saveLocal } from "./config.js";
+import { OWNER_EMAIL, STORAGE_KEYS, ROLES, saveLocal } from "./js/config.js";
 
 const emailInput = document.getElementById("lb-email-input");
 const roleButtons = document.querySelectorAll(".lb-role-btn");
