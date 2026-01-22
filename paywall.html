@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Laundry Bubbles – Paywall</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="manifest" href="/manifest.webmanifest">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="lb-body">
+  <div class="lb-shell">
+    <header class="lb-header">
+      <h1 class="lb-title">Laundry Bubbles</h1>
+      <p class="lb-subtitle">Access • $1 / day</p>
+    </header>
+
+    <main class="lb-main">
+      <section class="lb-card">
+        <h2 class="lb-card-title">Unlock Access</h2>
+
+        <p class="lb-muted">
+          Pay $1 to unlock 24 hours of full access.
+        </p>
+
+        <a href="YOUR_DOLLAR_LINK_HERE" target="_blank" class="lb-primary-btn" style="text-align:center;">
+          Pay $1
+        </a>
+
+        <button id="lb-paid-btn" class="lb-primary-btn" style="margin-top:12px;">
+          I Paid
+        </button>
+
+        <p id="lb-error" class="lb-error"></p>
+      </section>
+    </main>
+
+    <footer class="lb-footer">
+      <p>Payments processed externally.</p>
+    </footer>
+  </div>
+
+  <script type="module" src="/js/paywall.js"></script>
+</body>
+</html>
